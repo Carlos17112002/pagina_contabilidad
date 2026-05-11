@@ -456,15 +456,21 @@
                 <p class="text-base sm:text-lg text-gray-600">Cuéntanos tu desafío y te propondremos una solución sin
                     costo.</p>
                 <div class="space-y-4 sm:space-y-6 mt-6 sm:mt-8">
-                    <div class="flex items-center space-x-3 sm:space-x-4"><i
-                            class="fas fa-phone text-[#059669] text-lg sm:text-xl"></i><span
-                            class="text-sm sm:text-base text-gray-700">+56999999999</span></div>
-                    <div class="flex items-center space-x-3 sm:space-x-4"><i
-                            class="fas fa-envelope text-[#059669] text-lg sm:text-xl"></i><span
-                            class="text-sm sm:text-base text-gray-700">ejemplo@gmail.com</span></div>
-                    <div class="flex items-start space-x-3 sm:space-x-4"><i
-                            class="fas fa-map-marker-alt text-[#059669] text-lg sm:text-xl mt-1"></i><span
-                            class="text-sm sm:text-base text-gray-700">El Vaticano, Requínoa, Región de O'Higgins</span>
+                    <div class="flex items-center space-x-3 sm:space-x-4">
+                        <i class="fas fa-phone text-[#059669] text-lg sm:text-xl"></i>
+                        <a href="https://wa.me/56957549751" target="_blank"
+                            class="text-sm sm:text-base text-gray-700 hover:text-[#059669] transition-colors">
+                            +56957549751 <i class="fab fa-whatsapp ml-1 text-green-500"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-3 sm:space-x-4">
+                        <i class="fas fa-envelope text-[#059669] text-lg sm:text-xl"></i>
+                        <span class="text-sm sm:text-base text-gray-700">auditorayconsultoratytspa@gmail.com</span>
+                    </div>
+                    <div class="flex items-start space-x-3 sm:space-x-4">
+                        <i class="fas fa-map-marker-alt text-[#059669] text-lg sm:text-xl mt-1"></i>
+                        <span class="text-sm sm:text-base text-gray-700">El Vaticano, Requínoa, Región de
+                            O'Higgins</span>
                     </div>
                 </div>
             </div>
@@ -535,11 +541,11 @@
                     <ul class="space-y-2 sm:space-y-3 text-xs sm:text-sm">
                         <li class="flex items-start space-x-2 sm:space-x-3">
                             <i class="fas fa-phone text-[#059669] mt-0.5 sm:mt-1 text-sm sm:text-base"></i>
-                            <span>+56999999999</span>
+                            <span>+56957549751</span>
                         </li>
                         <li class="flex items-start space-x-2 sm:space-x-3">
                             <i class="fas fa-envelope text-[#059669] mt-0.5 sm:mt-1 text-sm sm:text-base"></i>
-                            <span>ejemplo@gmail.com</span>
+                            <span>auditorayconsultoratytspa@gmail.com</span>
                         </li>
                         <li class="flex items-start space-x-2 sm:space-x-3">
                             <i class="fas fa-map-marker-alt text-[#059669] mt-0.5 sm:mt-1 text-sm sm:text-base"></i>
@@ -560,6 +566,13 @@
         title="Volver arriba">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Botón WhatsApp flotante -->
+    <a href="https://wa.me/56957549751" target="_blank"
+        class="fixed bottom-8 right-24 z-40 bg-[#25D366] text-white h-12 w-12 rounded-full shadow-lg flex items-center justify-center hover:bg-[#20bd5a] transition-colors"
+        title="Hablar por WhatsApp">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
 
     <!-- Scripts EmailJS y funcionalidades -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -582,7 +595,7 @@
                     var now = new Date();
                     var timeStr = now.toLocaleString('es-CL', { dateStyle: 'short', timeStyle: 'short' });
 
-                    emailjs.send('service_zkxa67u', 'template_49xq1w4', {
+                    emailjs.send('service_1vzvtmi', 'template_ino6jxe', {
                         name: this.name.value,
                         email: this.email.value,
                         message: this.message.value,
